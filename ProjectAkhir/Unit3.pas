@@ -38,6 +38,9 @@ type
     Button4: TButton;
     Button5: TButton;
     Button6: TButton;
+    procedure bersih;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,5 +56,46 @@ uses
   Unit2;
 
 {$R *.dfm}
+
+procedure TForm3.bersih;
+begin
+  Edit1.Clear;
+  Edit2.Clear;
+  Edit3.Clear;
+  Edit4.Clear;
+  Edit5.Clear;
+  Edit6.Clear;
+  Edit7.clear;
+  Edit8.clear;
+  Edit9.clear;
+  Edit10.clear;
+  Edit11.clear;
+end;
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+bersih;
+Edit1.Enabled := True;
+Edit2.Enabled := True;
+Edit3.Enabled := True;
+Edit4.Enabled := True;
+Edit5.Enabled := True;
+Button1.Enabled := False;
+Button2.Enabled := True;
+Button5.Enabled := True;
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+begin
+DataModule2.ZQuery_siswa.SQL.Add('insert into siswa values(null,"'+Edit1.Text+'","'+Edit2.Text+'","'+Edit3.Text+'","'+Edit4.Text+'","'+Edit5.Text+'","'+Edit6.Text+'","'+Edit7.Text+'","'+Edit8.Text+'","'+Edit9.Text+'","'+Edit10.Text+'","'+Edit11.Text+'")');
+ZQuery1.ExecSQL ;
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from kustomer');
+ZQuery1.Open;
+bersih;
+ShowMessage('Data Berhasil Disimpan');
+end;
+
+end;
 
 end.

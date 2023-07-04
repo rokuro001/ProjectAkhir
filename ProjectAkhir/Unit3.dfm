@@ -251,23 +251,25 @@ object Form3: TForm3
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Baru'
     TabOrder = 12
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 216
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Button2'
+    Caption = 'Simpan'
     TabOrder = 13
+    OnClick = Button2Click
   end
   object Button3: TButton
     Left = 336
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Button3'
+    Caption = 'Edit'
     TabOrder = 14
   end
   object Button4: TButton
@@ -275,7 +277,7 @@ object Form3: TForm3
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Button4'
+    Caption = 'Hapus'
     TabOrder = 15
   end
   object Button5: TButton
@@ -283,7 +285,7 @@ object Form3: TForm3
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Button5'
+    Caption = 'Batal'
     TabOrder = 16
   end
   object Button6: TButton
@@ -291,7 +293,7 @@ object Form3: TForm3
     Top = 248
     Width = 75
     Height = 25
-    Caption = 'Button6'
+    Caption = 'Keluar'
     TabOrder = 17
   end
   object DataSource1: TDataSource
