@@ -1,14 +1,21 @@
-unit Unit4;
+unit Unit5;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, DB;
+  Dialogs, DB, StdCtrls;
 
 type
-  TForm4 = class(TForm)
+  TForm5 = class(TForm)
     DataSource1: TDataSource;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
   private
     { Private declarations }
   public
@@ -16,7 +23,7 @@ type
   end;
 
 var
-  Form4: TForm4;
+  Form5: TForm5;
 
 implementation
 

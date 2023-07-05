@@ -14,6 +14,7 @@ object Form4: TForm4
   PixelsPerInch = 96
   TextHeight = 13
   object DataSource1: TDataSource
+    DataSet = DataModule2.ZQuery1_ortu
     Left = 72
     Top = 48
   end
