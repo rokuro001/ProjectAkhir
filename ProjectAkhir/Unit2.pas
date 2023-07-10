@@ -10,13 +10,13 @@ type
   TDataModule2 = class(TDataModule)
     ZConnection1: TZConnection;
     ZQuery_siswa: TZQuery;
-    ZQuery1_ortu: TZQuery;
-    ZQuery1_wali_kelas: TZQuery;
-    ZQuery1_hubungan: TZQuery;
-    ZQuery1_poin: TZQuery;
-    ZQuery1_kelas: TZQuery;
-    ZQuery1_semester: TZQuery;
-    ZQuery1_user: TZQuery;
+    ZQuery_ortu: TZQuery;
+    ZQuery_wali_kelas: TZQuery;
+    ZQuery_hubungan: TZQuery;
+    ZQuery_poin: TZQuery;
+    ZQuery_kelas: TZQuery;
+    ZQuery_semester: TZQuery;
+    ZQuery_user: TZQuery;
   private
     { Private declarations }
   public

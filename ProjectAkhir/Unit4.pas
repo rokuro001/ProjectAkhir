@@ -4,11 +4,16 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, DB;
+  Dialogs, DB, Menus;
 
 type
   TForm4 = class(TForm)
-    DataSource1: TDataSource;
+    mm1: TMainMenu;
+    mniMENU1: TMenuItem;
+    mniSISWA1: TMenuItem;
+    mniSEMESTER1: TMenuItem;
+    mniORANGTUA1: TMenuItem;
+    mniSEMESTER2: TMenuItem;
   private
     { Private declarations }
   public

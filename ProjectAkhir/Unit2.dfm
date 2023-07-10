@@ -1,7 +1,7 @@
 object DataModule2: TDataModule2
   OldCreateOrder = False
-  Left = 192
-  Top = 125
+  Left = 291
+  Top = 155
   Height = 329
   Width = 535
   object ZConnection1: TZConnection
@@ -27,7 +27,7 @@ object DataModule2: TDataModule2
     Left = 56
     Top = 104
   end
-  object ZQuery1_ortu: TZQuery
+  object ZQuery_ortu: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
@@ -36,7 +36,7 @@ object DataModule2: TDataModule2
     Left = 192
     Top = 104
   end
-  object ZQuery1_wali_kelas: TZQuery
+  object ZQuery_wali_kelas: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
@@ -45,7 +45,7 @@ object DataModule2: TDataModule2
     Left = 304
     Top = 104
   end
-  object ZQuery1_hubungan: TZQuery
+  object ZQuery_hubungan: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
@@ -54,7 +54,7 @@ object DataModule2: TDataModule2
     Left = 48
     Top = 176
   end
-  object ZQuery1_poin: TZQuery
+  object ZQuery_poin: TZQuery
     Connection = ZConnection1
     SQL.Strings = (
       'select * from poin')
@@ -62,7 +62,7 @@ object DataModule2: TDataModule2
     Left = 176
     Top = 184
   end
-  object ZQuery1_kelas: TZQuery
+  object ZQuery_kelas: TZQuery
     Connection = ZConnection1
     SQL.Strings = (
       'select * from kelas'
@@ -71,7 +71,7 @@ object DataModule2: TDataModule2
     Left = 304
     Top = 184
   end
-  object ZQuery1_semester: TZQuery
+  object ZQuery_semester: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
@@ -80,13 +80,13 @@ object DataModule2: TDataModule2
     Left = 408
     Top = 104
   end
-  object ZQuery1_user: TZQuery
+  object ZQuery_user: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
       'select * from user')
     Params = <>
-    Left = 416
-    Top = 192
+    Left = 144
+    Top = 40
   end
 end
