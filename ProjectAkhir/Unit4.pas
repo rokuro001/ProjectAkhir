@@ -14,6 +14,10 @@ type
     mniSEMESTER1: TMenuItem;
     mniORANGTUA1: TMenuItem;
     mniSEMESTER2: TMenuItem;
+    procedure mniSISWA1Click(Sender: TObject);
+    procedure mniSEMESTER1Click(Sender: TObject);
+    procedure mniORANGTUA1Click(Sender: TObject);
+    procedure mniSEMESTER2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,8 +30,28 @@ var
 implementation
 
 uses
-  Unit2;
+  Unit2, Unit5, Unit6, Unit10, Unit11;
 
 {$R *.dfm}
+
+procedure TForm4.mniSISWA1Click(Sender: TObject);
+begin
+  form5.show;
+end;
+
+procedure TForm4.mniSEMESTER1Click(Sender: TObject);
+begin
+  form6.show;
+end;
+
+procedure TForm4.mniORANGTUA1Click(Sender: TObject);
+begin
+  form10.show;
+end;
+
+procedure TForm4.mniSEMESTER2Click(Sender: TObject);
+begin
+  form11.show;
+end;
 
 end.

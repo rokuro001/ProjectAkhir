@@ -45,6 +45,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
+    procedure dbgrd1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -227,6 +228,27 @@ end;
 procedure TForm6.btn6Click(Sender: TObject);
 begin
 frxrprt3.ShowReport;
+end;
+
+procedure TForm6.dbgrd1CellClick(Column: TColumn);
+begin
+ id:= DataModule2.ZQuery_ortu.Fields[0].AsString; // DBGrid
+edt1.Text:= DataModule2.ZQuery_ortu.Fields[1].AsString;
+edt2.Text:= DataModule2.ZQuery_ortu.Fields[2].AsString;
+edt3.Text:= DataModule2.ZQuery_ortu.Fields[3].AsString;
+edt4.Text:= DataModule2.ZQuery_ortu.Fields[4].AsString;
+edt5.Text:= DataModule2.ZQuery_ortu.Fields[5].AsString;
+edt6.Text:= DataModule2.ZQuery_ortu.Fields[6].AsString;
+cbb1.Text:= DataModule2.ZQuery_ortu.Fields[7].AsString;
+edt7.Text:= DataModule2.ZQuery_ortu.Fields[8].AsString;
+edt8.Text:= DataModule2.ZQuery_ortu.Fields[9].AsString;
+hidup;
+
+btn1.Enabled:= false;
+btn2.Enabled:= False;
+btn3.Enabled:= True;
+btn4.Enabled:= True;
+btn5.Enabled:= True;
 end;
 
 end.

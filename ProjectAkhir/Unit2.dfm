@@ -15,8 +15,8 @@ object DataModule2: TDataModule2
     User = 'root'
     Protocol = 'mysql'
     LibraryLocation = 'C:\Users\adilc\Desktop\Delphi7\ProjectAkhir\libmysql.dll'
-    Left = 56
-    Top = 24
+    Left = 40
+    Top = 40
   end
   object ZQuery_siswa: TZQuery
     Connection = ZConnection1
@@ -56,6 +56,7 @@ object DataModule2: TDataModule2
   end
   object ZQuery_poin: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from poin')
     Params = <>
@@ -64,6 +65,7 @@ object DataModule2: TDataModule2
   end
   object ZQuery_kelas: TZQuery
     Connection = ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from kelas'
       '')

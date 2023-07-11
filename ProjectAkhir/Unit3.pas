@@ -18,6 +18,14 @@ type
     mniSEMESTER1: TMenuItem;
     mniPOIN1: TMenuItem;
     mniUSER1: TMenuItem;
+    procedure mniWALIKELAS2Click(Sender: TObject);
+    procedure mniSISWA1Click(Sender: TObject);
+    procedure mniKELAS1Click(Sender: TObject);
+    procedure mniORANGTUA1Click(Sender: TObject);
+    procedure mniHUBUNGAN1Click(Sender: TObject);
+    procedure mniSEMESTER1Click(Sender: TObject);
+    procedure mniPOIN1Click(Sender: TObject);
+    procedure mniUSER1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,11 +37,53 @@ var
 
 implementation
 
+uses Unit7, Unit5, Unit9, Unit6, Unit10, Unit11, Unit8, Unit12;
+
 
 
 {$R *.dfm}
 
 
 
+
+procedure TForm3.mniWALIKELAS2Click(Sender: TObject);
+begin
+  form7.show;
+end;
+
+procedure TForm3.mniSISWA1Click(Sender: TObject);
+begin
+  form5.show;
+end;
+
+procedure TForm3.mniKELAS1Click(Sender: TObject);
+begin
+form9.show;
+end;
+
+procedure TForm3.mniORANGTUA1Click(Sender: TObject);
+begin
+  form6.show;  
+end;
+
+procedure TForm3.mniHUBUNGAN1Click(Sender: TObject);
+begin
+form10.show;
+end;
+
+procedure TForm3.mniSEMESTER1Click(Sender: TObject);
+begin
+form11.show;
+end;
+
+procedure TForm3.mniPOIN1Click(Sender: TObject);
+begin
+  form8.show;
+end;
+
+procedure TForm3.mniUSER1Click(Sender: TObject);
+begin
+form12.show;
+end;
 
 end.

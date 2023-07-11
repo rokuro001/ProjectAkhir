@@ -21,15 +21,19 @@ object Form4: TForm4
       Caption = 'MENU'
       object mniSISWA1: TMenuItem
         Caption = 'SISWA'
+        OnClick = mniSISWA1Click
       end
       object mniSEMESTER1: TMenuItem
         Caption = 'ORANG TUA'
+        OnClick = mniSEMESTER1Click
       end
       object mniORANGTUA1: TMenuItem
         Caption = 'HUBUNGAN'
+        OnClick = mniORANGTUA1Click
       end
       object mniSEMESTER2: TMenuItem
         Caption = 'SEMESTER'
+        OnClick = mniSEMESTER2Click
       end
     end
   end
