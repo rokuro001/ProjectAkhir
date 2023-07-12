@@ -180,13 +180,13 @@ ShowMessage('TANGGAL TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_semester.SQL.Clear; //simpan
-DataModule2.ZQuery_semester.SQL.Add('insert into semester values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt7.Text+'","'+edt8.Text+'")');
+DataModule2.ZQuery_semester.SQL.Add('insert into tablesemester values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt7.Text+'","'+edt8.Text+'")');
 DataModule2.ZQuery_semester.ExecSQL ;
 
 DataModule2.ZQuery_semester.SQL.Clear;
-DataModule2.ZQuery_semester.SQL.Add('select * from semester');
+DataModule2.ZQuery_semester.SQL.Add('select * from tablesemester');
 DataModule2.ZQuery_semester.Open;
-ShowMessage('DATA BARHASIL DISIMPAN!');
+ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
 end;
 
@@ -202,11 +202,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_semester.SQL.Clear;
-DataModule2.ZQuery_semester.SQL.Add('Update semester set siswa_id="'+edt1.Text+'",poin_id="'+edt2.Text+'",wali_id="'+edt3.Text+'",ortu_id="'+edt4.Text+'",kelas_id="'+edt5.Text+'",tanggal="'+edt6.Text+'",semester="'+edt7.Text+'",status="'+edt8.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_semester.SQL.Add('Update tablesemester set siswa_id="'+edt1.Text+'",poin_id="'+edt2.Text+'",wali_id="'+edt3.Text+'",ortu_id="'+edt4.Text+'",kelas_id="'+edt5.Text+'",tanggal="'+edt6.Text+'",semester="'+edt7.Text+'",status="'+edt8.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_semester. ExecSQL;
 
 DataModule2.ZQuery_semester.SQL.Clear;
-DataModule2.ZQuery_semester.SQL.Add('select * from semester');
+DataModule2.ZQuery_semester.SQL.Add('select * from tablesemester');
 DataModule2.ZQuery_semester.Open;
 kondisiawal;
 end;
@@ -218,10 +218,10 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule2.ZQuery_semester.SQL.Clear;
-DataModule2.ZQuery_semester.SQL.Add(' delete from semester where id="'+id+'"');
+DataModule2.ZQuery_semester.SQL.Add(' delete from tablesemester where id="'+id+'"');
 DataModule2.ZQuery_semester. ExecSQL;
 DataModule2.ZQuery_semester.SQL.Clear;
-DataModule2.ZQuery_semester.SQL.Add('select * from semester');
+DataModule2.ZQuery_semester.SQL.Add('select * from tablesemester');
 DataModule2.ZQuery_semester.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 kondisiawal;

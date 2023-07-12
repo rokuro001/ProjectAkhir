@@ -1,16 +1,17 @@
 object Form11: TForm11
   Left = 315
   Top = 131
-  Width = 928
-  Height = 480
-  Caption = 'Form11'
-  Color = clBtnFace
+  Width = 624
+  Height = 516
+  Caption = 'Data Semester'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -130,9 +131,9 @@ object Form11: TForm11
   end
   object dbgrd1: TDBGrid
     Left = 8
-    Top = 256
-    Width = 553
-    Height = 281
+    Top = 248
+    Width = 585
+    Height = 217
     DataSource = ds8
     TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET

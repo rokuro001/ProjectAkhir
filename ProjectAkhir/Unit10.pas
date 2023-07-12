@@ -87,13 +87,13 @@ ShowMessage('STATUS ORTU TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_hubungan.SQL.Clear; //simpan
-DataModule2.ZQuery_hubungan.SQL.Add('insert into hubungan values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'")');
+DataModule2.ZQuery_hubungan.SQL.Add('insert into tablehubungan values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'")');
 DataModule2.ZQuery_hubungan.ExecSQL ;
 
 DataModule2.ZQuery_hubungan.SQL.Clear;
-DataModule2.ZQuery_hubungan.SQL.Add('select * from hubungan');
+DataModule2.ZQuery_hubungan.SQL.Add('select * from tablehubungan');
 DataModule2.ZQuery_hubungan.Open;
-ShowMessage('DATA BARHASIL DISIMPAN!');
+ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
 end;
 
@@ -143,7 +143,7 @@ DataModule2.ZQuery_hubungan.SQL.Add('Update hubungan set siswa_id="'+edt1.Text+'
 DataModule2.ZQuery_hubungan. ExecSQL;
 
 DataModule2.ZQuery_hubungan.SQL.Clear;
-DataModule2.ZQuery_hubungan.SQL.Add('select * from hubungan');
+DataModule2.ZQuery_hubungan.SQL.Add('select * from tablehubungan');
 DataModule2.ZQuery_hubungan.Open;
 kondisiawal;
 end;
@@ -155,7 +155,7 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule2.ZQuery_hubungan.SQL.Clear;
-DataModule2.ZQuery_hubungan.SQL.Add(' delete from hubungan where id="'+id+'"');
+DataModule2.ZQuery_hubungan.SQL.Add(' delete from tablehubungan where id="'+id+'"');
 DataModule2.ZQuery_hubungan. ExecSQL;
 DataModule2.ZQuery_hubungan.SQL.Clear;
 DataModule2.ZQuery_hubungan.SQL.Add('select * from tablehubungan');

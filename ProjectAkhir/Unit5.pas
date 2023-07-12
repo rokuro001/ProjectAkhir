@@ -197,13 +197,13 @@ ShowMessage('STATUS TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_siswa.SQL.Clear; //simpan
-DataModule2.ZQuery_siswa.SQL.Add('insert into siswa values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+cbb1.Text+'","'+edt7.Text+'","'+edt8.Text+'","'+edt9.Text+'","'+edt10.Text+'")');
+DataModule2.ZQuery_siswa.SQL.Add('insert into tablesiswa values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+cbb1.Text+'","'+edt7.Text+'","'+edt8.Text+'","'+edt9.Text+'","'+edt10.Text+'")');
 DataModule2.ZQuery_siswa.ExecSQL ;
 
 DataModule2.ZQuery_siswa.SQL.Clear;
-DataModule2.ZQuery_siswa.SQL.Add('select * from siswa');
+DataModule2.ZQuery_siswa.SQL.Add('select * from tablesiswa');
 DataModule2.ZQuery_siswa.Open;
-ShowMessage('DATA BARHASIL DISIMPAN!');
+ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
 end;
 
@@ -219,11 +219,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_siswa.SQL.Clear;
-DataModule2.ZQuery_siswa.SQL.Add('Update siswa set nis="'+edt1.Text+'",nisn="'+edt2.Text+'",nama_siswa="'+edt3.Text+'",nik="'+edt4.Text+'",tempat_lahir="'+edt5.Text+'",tanggal_lahir="'+edt6.Text+'",jk="'+cbb1.Text+'",alamat="'+edt7.Text+'",telp="'+edt8.Text+'",hp="'+edt9.Text+'",status="'+edt10.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_siswa.SQL.Add('Update tablesiswa set nis="'+edt1.Text+'",nisn="'+edt2.Text+'",nama_siswa="'+edt3.Text+'",nik="'+edt4.Text+'",tempat_lahir="'+edt5.Text+'",tanggal_lahir="'+edt6.Text+'",jk="'+cbb1.Text+'",alamat="'+edt7.Text+'",telp="'+edt8.Text+'",hp="'+edt9.Text+'",status="'+edt10.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_siswa.ExecSQL;
 
 DataModule2.ZQuery_siswa.SQL.Clear;
-DataModule2.ZQuery_siswa.SQL.Add('select * from siswa');
+DataModule2.ZQuery_siswa.SQL.Add('select * from tablesiswa');
 DataModule2.ZQuery_siswa.Open;
 kondisiawal;
 end;

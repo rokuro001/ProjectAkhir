@@ -1,16 +1,17 @@
 object Form8: TForm8
-  Left = 235
+  Left = 332
   Top = 139
-  Width = 928
-  Height = 480
-  Caption = 'Form8'
-  Color = clBtnFace
+  Width = 641
+  Height = 516
+  Caption = 'Data Poin'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -102,9 +103,9 @@ object Form8: TForm8
   end
   object dbgrd1: TDBGrid
     Left = 16
-    Top = 224
-    Width = 553
-    Height = 281
+    Top = 232
+    Width = 569
+    Height = 225
     DataSource = ds5
     TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET

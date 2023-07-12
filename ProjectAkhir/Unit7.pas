@@ -161,13 +161,13 @@ ShowMessage('STATUS TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_wali_kelas.SQL.Clear; //simpan
-DataModule2.ZQuery_wali_kelas.SQL.Add('insert into wali_kelas values(null,"'+edt1.Text+'","'+edt2.Text+'","'+cbb1.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt8.Text+'")');
+DataModule2.ZQuery_wali_kelas.SQL.Add('insert into tablewalikelas values(null,"'+edt1.Text+'","'+edt2.Text+'","'+cbb1.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt8.Text+'")');
 DataModule2.ZQuery_wali_kelas.ExecSQL ;
 
 DataModule2.ZQuery_wali_kelas.SQL.Clear;
-DataModule2.ZQuery_wali_kelas.SQL.Add('select * from wali_kelas');
+DataModule2.ZQuery_wali_kelas.SQL.Add('select * from tablewalikelas');
 DataModule2.ZQuery_wali_kelas.Open;
-ShowMessage('DATA BARHASIL DISIMPAN!');
+ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
 end;
 
@@ -183,11 +183,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_wali_kelas.SQL.Clear;
-DataModule2.ZQuery_wali_kelas.SQL.Add('Update wali_kelas set nik="'+edt1.Text+'",nama="'+edt2.Text+'",jk="'+cbb1.Text+'",pendidikan="'+edt3.Text+'",telp="'+edt4.Text+'",matpel="'+edt5.Text+'",alamat="'+edt6.Text+'",status="'+edt8.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_wali_kelas.SQL.Add('Update tablewalikelas set nik="'+edt1.Text+'",nama="'+edt2.Text+'",jk="'+cbb1.Text+'",pendidikan="'+edt3.Text+'",telp="'+edt4.Text+'",matpel="'+edt5.Text+'",alamat="'+edt6.Text+'",status="'+edt8.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_wali_kelas. ExecSQL;
 
 DataModule2.ZQuery_wali_kelas.SQL.Clear;
-DataModule2.ZQuery_wali_kelas.SQL.Add('select * from wali_kelas');
+DataModule2.ZQuery_wali_kelas.SQL.Add('select * from tablewalikelas');
 DataModule2.ZQuery_wali_kelas.Open;
 kondisiawal;
 end;
@@ -199,10 +199,10 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule2.ZQuery_wali_kelas.SQL.Clear;
-DataModule2.ZQuery_wali_kelas.SQL.Add(' delete from wali_kelas where id="'+id+'"');
+DataModule2.ZQuery_wali_kelas.SQL.Add(' delete from tablewalikelas where id="'+id+'"');
 DataModule2.ZQuery_wali_kelas. ExecSQL;
 DataModule2.ZQuery_wali_kelas.SQL.Clear;
-DataModule2.ZQuery_wali_kelas.SQL.Add('select * from wali_kelas');
+DataModule2.ZQuery_wali_kelas.SQL.Add('select * from tablewalikelas');
 DataModule2.ZQuery_wali_kelas.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 kondisiawal;

@@ -124,11 +124,11 @@ ShowMessage('STATUS BELUM DIISI DENGAN BENAR!');
 end else
 begin
 DataModule2.ZQuery_poin.SQL.Clear; //simpan
-DataModule2.ZQuery_poin.SQL.Add('insert into poin values(null,"'+edt1.Text+'","'+edt2.Text+'","'+cbb1.Text+'","'+cbb2.Text+'")');
+DataModule2.ZQuery_poin.SQL.Add('insert into tablepoin values(null,"'+edt1.Text+'","'+edt2.Text+'","'+cbb1.Text+'","'+cbb2.Text+'")');
 DataModule2.ZQuery_poin.ExecSQL ;
 
 DataModule2.ZQuery_poin.SQL.Clear;
-DataModule2.ZQuery_poin.SQL.Add('select * from poin');
+DataModule2.ZQuery_poin.SQL.Add('select * from tablepoin');
 DataModule2.ZQuery_poin.Open;
 ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
@@ -146,11 +146,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_poin.SQL.Clear;
-DataModule2.ZQuery_poin.SQL.Add('Update poin set nama_poin="'+edt1.Text+'",bobot="'+edt2.Text+'",jenis="'+cbb1.Text+'",status="'+cbb2.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_poin.SQL.Add('Update tablepoin set nama_poin="'+edt1.Text+'",bobot="'+edt2.Text+'",jenis="'+cbb1.Text+'",status="'+cbb2.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_poin. ExecSQL;
 
 DataModule2.ZQuery_poin.SQL.Clear;
-DataModule2.ZQuery_poin.SQL.Add('select * from poin');
+DataModule2.ZQuery_poin.SQL.Add('select * from tablepoin');
 DataModule2.ZQuery_poin.Open;
 kondisiawal;
 end;
@@ -162,10 +162,10 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule2.ZQuery_poin.SQL.Clear;
-DataModule2.ZQuery_poin.SQL.Add(' delete from poin where id="'+id+'"');
+DataModule2.ZQuery_poin.SQL.Add(' delete from tablepoin where id="'+id+'"');
 DataModule2.ZQuery_poin. ExecSQL;
 DataModule2.ZQuery_poin.SQL.Clear;
-DataModule2.ZQuery_poin.SQL.Add('select * from poin');
+DataModule2.ZQuery_poin.SQL.Add('select * from tablepoin');
 DataModule2.ZQuery_poin.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 kondisiawal;

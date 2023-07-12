@@ -1,10 +1,10 @@
 object Form4: TForm4
-  Left = 192
-  Top = 125
-  Width = 928
-  Height = 480
-  Caption = 'MenuWakel'
-  Color = clBtnFace
+  Left = 517
+  Top = 174
+  Width = 623
+  Height = 335
+  Caption = 'Menu Wali Kelas'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

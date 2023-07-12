@@ -1,10 +1,10 @@
 object Form3: TForm3
-  Left = 192
-  Top = 125
-  Width = 928
-  Height = 480
+  Left = 177
+  Top = 70
+  Width = 623
+  Height = 335
   Caption = 'Menu'
-  Color = clBtnFace
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -12,6 +12,7 @@ object Form3: TForm3
   Font.Style = []
   Menu = mm1
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object mm1: TMainMenu
@@ -46,10 +47,6 @@ object Form3: TForm3
       object mniPOIN1: TMenuItem
         Caption = 'POIN'
         OnClick = mniPOIN1Click
-      end
-      object mniUSER1: TMenuItem
-        Caption = 'USER'
-        OnClick = mniUSER1Click
       end
     end
   end

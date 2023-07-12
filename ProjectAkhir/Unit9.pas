@@ -116,11 +116,11 @@ ShowMessage('JURUSAN TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_kelas.SQL.Clear; //simpan
-DataModule2.ZQuery_kelas.SQL.Add('insert into kelas values(null,"'+edt1.Text+'","'+edt2.Text+'")');
+DataModule2.ZQuery_kelas.SQL.Add('insert into tablekelas values(null,"'+edt1.Text+'","'+edt2.Text+'")');
 DataModule2.ZQuery_kelas.ExecSQL ;
 
 DataModule2.ZQuery_kelas.SQL.Clear;
-DataModule2.ZQuery_kelas.SQL.Add('select * from kelas');
+DataModule2.ZQuery_kelas.SQL.Add('select * from tablekelas');
 DataModule2.ZQuery_kelas.Open;
 ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
@@ -138,11 +138,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_kelas.SQL.Clear;
-DataModule2.ZQuery_kelas.SQL.Add('Update kelas set nama="'+edt1.Text+'",jurusan="'+edt2.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_kelas.SQL.Add('Update tablekelas set nama="'+edt1.Text+'",jurusan="'+edt2.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_kelas. ExecSQL;
 
 DataModule2.ZQuery_kelas.SQL.Clear;
-DataModule2.ZQuery_kelas.SQL.Add('select * from kelas');
+DataModule2.ZQuery_kelas.SQL.Add('select * from tablekelas');
 DataModule2.ZQuery_kelas.Open;
 kondisiawal;
 end;
@@ -154,10 +154,10 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule2.ZQuery_kelas.SQL.Clear;
-DataModule2.ZQuery_kelas.SQL.Add(' delete from kelas where id="'+id+'"');
+DataModule2.ZQuery_kelas.SQL.Add(' delete from tablekelas where id="'+id+'"');
 DataModule2.ZQuery_kelas. ExecSQL;
 DataModule2.ZQuery_kelas.SQL.Clear;
-DataModule2.ZQuery_kelas.SQL.Add('select * from kelas');
+DataModule2.ZQuery_kelas.SQL.Add('select * from tablekelas');
 DataModule2.ZQuery_kelas.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 kondisiawal;

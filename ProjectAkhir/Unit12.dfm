@@ -1,16 +1,17 @@
 object Form12: TForm12
   Left = 274
   Top = 115
-  Width = 928
-  Height = 480
-  Caption = 'Form12'
-  Color = clBtnFace
+  Width = 641
+  Height = 516
+  Caption = 'Data User'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel

@@ -17,7 +17,6 @@ type
     mniHUBUNGAN1: TMenuItem;
     mniSEMESTER1: TMenuItem;
     mniPOIN1: TMenuItem;
-    mniUSER1: TMenuItem;
     procedure mniWALIKELAS2Click(Sender: TObject);
     procedure mniSISWA1Click(Sender: TObject);
     procedure mniKELAS1Click(Sender: TObject);
@@ -25,7 +24,8 @@ type
     procedure mniHUBUNGAN1Click(Sender: TObject);
     procedure mniSEMESTER1Click(Sender: TObject);
     procedure mniPOIN1Click(Sender: TObject);
-    procedure mniUSER1Click(Sender: TObject);
+    procedure DaftarUser1Click(Sender: TObject);
+    procedure USER1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -63,7 +63,7 @@ end;
 
 procedure TForm3.mniORANGTUA1Click(Sender: TObject);
 begin
-  form6.show;  
+  form6.show;
 end;
 
 procedure TForm3.mniHUBUNGAN1Click(Sender: TObject);
@@ -81,9 +81,14 @@ begin
   form8.show;
 end;
 
-procedure TForm3.mniUSER1Click(Sender: TObject);
+procedure TForm3.DaftarUser1Click(Sender: TObject);
 begin
-form12.show;
+  form12.Show;
+end;
+
+procedure TForm3.USER1Click(Sender: TObject);
+begin
+  form12.Show;
 end;
 
 end.

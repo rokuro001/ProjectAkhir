@@ -1,16 +1,17 @@
 object Form10: TForm10
-  Left = 272
+  Left = 157
   Top = 143
-  Width = 928
-  Height = 480
-  Caption = 'Form10'
-  Color = clBtnFace
+  Width = 624
+  Height = 516
+  Caption = 'Data Hubungan'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -108,10 +109,10 @@ object Form10: TForm10
     OnClick = btn5Click
   end
   object dbgrd1: TDBGrid
-    Left = 8
-    Top = 248
-    Width = 553
-    Height = 281
+    Left = 16
+    Top = 240
+    Width = 585
+    Height = 217
     DataSource = ds7
     TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET

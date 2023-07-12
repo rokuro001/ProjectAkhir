@@ -13,8 +13,9 @@ type
     Edit1: TEdit;
     Edit2: TEdit;
     btn1: TButton;
-    ds: TDataSource;
+    Button1: TButton;
     procedure btn1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,7 +31,7 @@ var
 implementation
 
 uses
-  Unit2, ZAbstractDataset, Unit3, Unit4;
+  Unit2, ZAbstractDataset, Unit3, Unit4, Unit12;
 
 {$R *.dfm}
 
@@ -43,7 +44,7 @@ begin
    DataModule2.ZQuery_user := DataModule2.ZQuery_user.Create(nil);
   try
     DataModule2.ZQuery_user.Connection := DataModule2.ZConnection1;
-    DataModule2.ZQuery_user.SQL.Text := 'SELECT level FROM user WHERE username = :username AND password = :password';
+    DataModule2.ZQuery_user.SQL.Text := 'SELECT level FROM tableuser WHERE username = :username AND password = :password';
     DataModule2.ZQuery_user.ParamByName('username').AsString := username;
     DataModule2.ZQuery_user.ParamByName('password').AsString := password;
     DataModule2.ZQuery_user.Open;
@@ -75,5 +76,10 @@ begin
 end;
 end;
 
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  form12.show;
+end;
 
 end.

@@ -1,16 +1,17 @@
 object Form6: TForm6
-  Left = 297
-  Top = 134
-  Width = 928
-  Height = 512
-  Caption = 'Form6'
-  Color = clBtnFace
+  Left = 449
+  Top = 135
+  Width = 641
+  Height = 516
+  Caption = 'Data Orang Tua'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -175,10 +176,10 @@ object Form6: TForm6
     OnClick = btn5Click
   end
   object dbgrd1: TDBGrid
-    Left = 8
+    Left = 16
     Top = 264
-    Width = 561
-    Height = 257
+    Width = 553
+    Height = 185
     DataSource = ds3
     TabOrder = 12
     TitleFont.Charset = DEFAULT_CHARSET
@@ -212,6 +213,7 @@ object Form6: TForm6
     OnClick = btn6Click
   end
   object ds3: TDataSource
+    DataSet = DataModule2.ZQuery_ortu
     Left = 16
     Top = 24
   end

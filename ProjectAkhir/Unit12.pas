@@ -186,11 +186,11 @@ ShowMessage('TANGGAL TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_user.SQL.Clear; //simpan
-DataModule2.ZQuery_user.SQL.Add('insert into user values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+cbb1.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt7.Text+'")');
+DataModule2.ZQuery_user.SQL.Add('insert into tableuser values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+cbb1.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+edt7.Text+'")');
 DataModule2.ZQuery_user.ExecSQL ;
 
 DataModule2.ZQuery_user.SQL.Clear;
-DataModule2.ZQuery_user.SQL.Add('select * from user');
+DataModule2.ZQuery_user.SQL.Add('select * from tableuser');
 DataModule2.ZQuery_user.Open;
 ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
@@ -209,11 +209,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_user.SQL.Clear;
-DataModule2.ZQuery_user.SQL.Add('Update user set username="'+edt1.Text+'",password="'+edt2.Text+'",statushubanak="'+edt3.Text+'",level="'+cbb1.Text+'",status="'+edt4.Text+'",created_at="'+edt5.Text+'",created_userid="'+id+'",update_at="'+edt7.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_user.SQL.Add('Update tableuser set username="'+edt1.Text+'",password="'+edt2.Text+'",statushubanak="'+edt3.Text+'",level="'+cbb1.Text+'",status="'+edt4.Text+'",created_at="'+edt5.Text+'",created_userid="'+id+'",update_at="'+edt7.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_user. ExecSQL;
 
 DataModule2.ZQuery_user.SQL.Clear;
-DataModule2.ZQuery_user.SQL.Add('select * from user');
+DataModule2.ZQuery_user.SQL.Add('select * from tableuser');
 DataModule2.ZQuery_user.Open;
 kondisiawal;
 end;
@@ -228,7 +228,7 @@ DataModule2.ZQuery_user.SQL.Clear;
 DataModule2.ZQuery_user.SQL.Add(' delete from tableuser where id="'+id+'"');
 DataModule2.ZQuery_user. ExecSQL;
 DataModule2.ZQuery_user.SQL.Clear;
-DataModule2.ZQuery_user.SQL.Add('select * from user');
+DataModule2.ZQuery_user.SQL.Add('select * from tableuser');
 DataModule2.ZQuery_user.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 kondisiawal;

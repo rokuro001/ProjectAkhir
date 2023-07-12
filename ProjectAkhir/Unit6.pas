@@ -166,13 +166,13 @@ ShowMessage('STATUS TIDAK BOLEH KOSONG!');
 end else
 begin
 DataModule2.ZQuery_ortu.SQL.Clear; //simpan
-DataModule2.ZQuery_ortu.SQL.Add('insert into ortu values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+cbb1.Text+'","'+edt7.Text+'","'+edt8.Text+'")');
+DataModule2.ZQuery_ortu.SQL.Add('insert into tableortu values(null,"'+edt1.Text+'","'+edt2.Text+'","'+edt3.Text+'","'+edt4.Text+'","'+edt5.Text+'","'+edt6.Text+'","'+cbb1.Text+'","'+edt7.Text+'","'+edt8.Text+'")');
 DataModule2.ZQuery_ortu.ExecSQL ;
 
 DataModule2.ZQuery_ortu.SQL.Clear;
-DataModule2.ZQuery_ortu.SQL.Add('select * from ortu');
+DataModule2.ZQuery_ortu.SQL.Add('select * from tableortu');
 DataModule2.ZQuery_ortu.Open;
-ShowMessage('DATA BARHASIL DISIMPAN!');
+ShowMessage('DATA BERHASIL DISIMPAN!');
 kondisiawal;
 end;
 
@@ -189,11 +189,11 @@ end else
 begin
 ShowMessage('DATA BERHASIL DIUPDATE!'); //UPDATE
 DataModule2.ZQuery_ortu.SQL.Clear;
-DataModule2.ZQuery_ortu.SQL.Add('Update ortu set nis="'+edt1.Text+'",nama_ortu="'+edt2.Text+'",pendidikan="'+edt3.Text+'",pekerjaan="'+edt4.Text+'",telp="'+edt5.Text+'",alamat="'+edt6.Text+'",jk="'+cbb1.Text+'",agama="'+edt7.Text+'",id_active="'+edt8.Text+'" where id="'+id+'"');
+DataModule2.ZQuery_ortu.SQL.Add('Update tableortu set nis="'+edt1.Text+'",nama_ortu="'+edt2.Text+'",pendidikan="'+edt3.Text+'",pekerjaan="'+edt4.Text+'",telp="'+edt5.Text+'",alamat="'+edt6.Text+'",jk="'+cbb1.Text+'",agama="'+edt7.Text+'",id_active="'+edt8.Text+'" where id="'+id+'"');
 DataModule2.ZQuery_ortu.ExecSQL;
 
 DataModule2.ZQuery_ortu.SQL.Clear;
-DataModule2.ZQuery_ortu.SQL.Add('select * from ortu');
+DataModule2.ZQuery_ortu.SQL.Add('select * from tableortu');
 DataModule2.ZQuery_ortu.Open;
 kondisiawal;
 end;
@@ -205,10 +205,10 @@ begin
 if MessageDlg('APAKAH YAKIN MENGHAPUS DATA INI?',mtWarning,[mbYes,mbNo],0)= mryes then
 begin
 DataModule2.ZQuery_ortu.SQL.Clear;
-DataModule2.ZQuery_ortu.SQL.Add(' delete from ortu where id="'+id+'"');
+DataModule2.ZQuery_ortu.SQL.Add(' delete from tableortu where id="'+id+'"');
 DataModule2.ZQuery_ortu.ExecSQL;
 DataModule2.ZQuery_ortu.SQL.Clear;
-DataModule2.ZQuery_ortu.SQL.Add('select * from ortu');
+DataModule2.ZQuery_ortu.SQL.Add('select * from tableortu');
 DataModule2.ZQuery_ortu.Open;
 ShowMessage('DATA BERHASIL DIHAPUS');
 kondisiawal;

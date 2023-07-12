@@ -1,16 +1,17 @@
 object Form9: TForm9
-  Left = 240
-  Top = 130
-  Width = 928
-  Height = 480
-  Caption = 'Form9'
-  Color = clBtnFace
+  Left = 305
+  Top = 226
+  Width = 624
+  Height = 516
+  Caption = 'Data Kelas'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel

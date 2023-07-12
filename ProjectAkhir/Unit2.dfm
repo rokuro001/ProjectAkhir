@@ -22,7 +22,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from siswa')
+      'select * from tablesiswa')
     Params = <>
     Left = 56
     Top = 104
@@ -31,7 +31,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from ortu')
+      'select * from tableortu')
     Params = <>
     Left = 192
     Top = 104
@@ -40,7 +40,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from wali_kelas')
+      'select * from tablewalikelas')
     Params = <>
     Left = 304
     Top = 104
@@ -49,7 +49,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from hubungan')
+      'select * from tablehubungan')
     Params = <>
     Left = 48
     Top = 176
@@ -58,7 +58,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from poin')
+      'select * from tablepoin')
     Params = <>
     Left = 176
     Top = 184
@@ -67,7 +67,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from kelas'
+      'select * from tablekelas'
       '')
     Params = <>
     Left = 304
@@ -77,7 +77,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from semester')
+      'select * from tablesemester')
     Params = <>
     Left = 408
     Top = 104
@@ -86,7 +86,7 @@ object DataModule2: TDataModule2
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from user')
+      'select * from tableuser')
     Params = <>
     Left = 144
     Top = 40

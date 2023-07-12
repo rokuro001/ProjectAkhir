@@ -1,16 +1,17 @@
 object Form1: TForm1
-  Left = 258
-  Top = 147
-  Width = 928
-  Height = 480
-  Caption = 'Form1'
-  Color = clBtnFace
+  Left = 295
+  Top = 142
+  Width = 623
+  Height = 315
+  Caption = 'Login'
+  Color = clTeal
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
@@ -42,17 +43,21 @@ object Form1: TForm1
     TabOrder = 1
   end
   object btn1: TButton
-    Left = 168
-    Top = 112
-    Width = 75
+    Left = 56
+    Top = 128
+    Width = 121
     Height = 25
     Caption = 'LOGIN'
     TabOrder = 2
     OnClick = btn1Click
   end
-  object ds: TDataSource
-    DataSet = DataModule2.ZQuery_user
-    Left = 32
-    Top = 40
+  object Button1: TButton
+    Left = 216
+    Top = 128
+    Width = 113
+    Height = 25
+    Caption = 'TAMBAH USER'
+    TabOrder = 3
+    OnClick = Button1Click
   end
 end
